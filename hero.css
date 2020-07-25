@@ -4,6 +4,7 @@
 	background-image: url(images/headway-5QgIuuBxKwM-unsplash.jpg);
 	background-size: cover;
 	background-position: right;
+	background-repeat: no-repeat;
 	box-shadow: var(--red-shadow);
 }
 
