@@ -71,8 +71,6 @@ body {
 	align-items: center;
 	background-color: var(--uxd-red);
 	box-shadow: var(--red-shadow);
-	position: sticky;
-	top: 0;
 }
 
 .uxd-header__constraint {
@@ -107,6 +105,8 @@ body {
 
 	.uxd-header {
 		box-shadow: var(--red-shadow);
+		position: sticky;
+		top: 0;
 	}
 
 	.uxd-header__desktop-nav {
