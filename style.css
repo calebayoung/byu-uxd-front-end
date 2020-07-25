@@ -40,6 +40,8 @@ body {
 	align-items: center;
 	background-color: var(--uxd-red);
 	box-shadow: var(--red-shadow);
+	position: sticky;
+	top: 0;
 }
 
 .uxd-header__constraint {
@@ -111,7 +113,7 @@ body {
 .uxd-main {
 	width: calc(100% - 3rem);
 	max-width: calc(800px - 3rem);
-	padding: 2rem 1.5rem 3rem;
+	padding: 0 1.5rem 3rem;
 	margin: 0 auto;
 	flex: 1;
 }
@@ -123,7 +125,11 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin: 2rem 0 0;
+	margin: 6rem 0 0;
+}
+
+.uxd-main h2:first-of-type {
+	margin-top: 4rem;
 }
 
 .uxd-main h2 + hr {
@@ -147,6 +153,38 @@ body {
 .uxd-main a:hover {
 	cursor: pointer;
 	text-decoration: underline;
+}
+
+.uxd-goals {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 3rem;
+	margin-top: 2rem;
+}
+
+.uxd-goal {
+	width: 100%;
+	max-width: 210px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.uxd-goal__icon {
+	height: 3rem;
+}
+
+.uxd-goal strong {
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+
+	.uxd-goals {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 4rem;
+	}
 }
 
 .uxd-footer {
