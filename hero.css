@@ -3,7 +3,7 @@
 	justify-content: center;
 	background-image: url(images/headway-5QgIuuBxKwM-unsplash.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 	box-shadow: var(--red-shadow);
 }
 
@@ -165,6 +165,10 @@
 
 @media (min-width: 640px) {
 
+	.uxd-hero {
+		background-position: center;
+	}
+
 	.uxd-hero__upcoming-events {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -211,7 +215,7 @@
 		margin: -2rem 2rem -1rem 0;
 	}
 
-	.uxd-hero__content {
-		padding-top: 4rem;
+	.uxd-hero__social-links {
+		margin-top: 1rem;
 	}
 }
