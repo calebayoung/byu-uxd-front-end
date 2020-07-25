@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+	--uxd-red-lightest: #fc7c73;
+	--uxd-red-light: #fb574b;
+	--uxd-red: #fa2617;
+	--uxd-red-dark: #f01505;
+	--uxd-red-darkest: #c81104;
+	--byu-grey-darkest: #141414;
+	--byu-grey-dark: #666;
+	--byu-grey-medium-dark: #8f8f8f;
+	--byu-grey-medium: #c5c5c5;
+	--byu-grey-medium-light: #e6e6e6;
+	--byu-grey-light: #f4f4f4;
+	--byu-grey-lightest: #fafafa;
+	--ringside-ssm: "HCo Ringside Narrow SSm", "Arial", sans-serif;
+	--public-sans: "Public Sans", sans-serif;
+	--red-shadow: 0 3px 7px 0 rgba(60, 64, 67, 0.3), 0 3px 6px 2px rgba(60, 64, 67, 0.15);
+	--red-shadow-inverted: 0 -3px 7px 0 rgba(60, 64, 67, 0.3), 0 3px 6px 2px rgba(60, 64, 67, 0.15);
+	--white-shadow: 0 -3px 2px 0 rgba(60, 64, 67, 0.3), 0 3px 6px 2px rgba(60, 64, 67, 0.15);
+	--uxd-border-radius: 10px;
+}
+
+html {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 0;
+}
+
+.uxd-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--uxd-red);
+	box-shadow: var(--red-shadow);
+}
+
+.uxd-header__constraint {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.uxd-header__logo-link {
+	display: flex;
+}
+
+.uxd-header__logo {
+	width: 150px;
+}
+
+.uxd-header__desktop-nav {
+	display: none;
+}
+
+.uxd-header__menu-icon {
+	width: 28px;
+	margin-right: 1.5rem;
+}
+
+.uxd-header__search-form {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+
+	.uxd-header {
+		box-shadow: var(--red-shadow);
+	}
+
+	.uxd-header__desktop-nav {
+		height: 100%;
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: max-content;
+		padding: 0 1rem;
+	}
+
+	.uxd-header__desktop-link {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		font-family: var(--ringside-ssm);
+		color: #fff;
+		text-decoration: none;
+		padding: 0 1rem;
+	}
+
+	.uxd-header__desktop-link:hover {
+		background-color: var(--uxd-red-dark);
+	}
+
+	.uxd-header__menu-icon {
+		display: none;
+	}
+
+	.uxd-header__search-form {
+		width: 100%;
+		display: flex;
+	}
+}
+
+.uxd-hero {
+	display: flex;
+	justify-content: center;
+	background-image: url(images/headway-5QgIuuBxKwM-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: var(--red-shadow);
+}
+
+.uxd-hero__constraint {
+	width: 100%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: max-content auto;
+}
+
+.uxd-hero__upcoming-events {
+	display: grid;
+	grid-auto-rows: min-content;
+	grid-row-gap: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 2rem 3rem;
+}
+
+.uxd-hero__upcoming-events-title {
+	font-family: var(--ringside-ssm);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.uxd-hero__event {
+	max-width: 450px;
+	display: flex;
+	background-color: #fff;
+	border-radius: var(--uxd-border-radius);
+	box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.75);
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.uxd-hero__event-date {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--ringside-ssm);
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: var(--uxd-red);
+	padding: 1rem;
+	border-top-left-radius: var(--uxd-border-radius);
+	border-bottom-left-radius: var(--uxd-border-radius);
+}
+
+.uxd-hero__event-month {
+	font-size: 20px;
+	margin: 0;
+}
+
+.uxd-hero__event-day-number {
+	font-size: 80px;
+	margin: 0;
+}
+
+.uxd-hero__event-day {
+	font-size: 16px;
+	margin: 0;
+}
+
+.uxd-hero__event-info {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem;
+}
+
+.uxd-hero__event-title {
+	font-family: var(--ringside-ssm);
+	color: var(--uxd-red-dark);
+	margin: 0.5rem 0;
+}
+
+.uxd-hero__event-text {
+	font-family: var(--public-sans);
+	color: var(--byu-grey-dark);
+}
+
+.uxd-hero__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+}
+
+.uxd-hero__content-header {
+	font-family: var(--ringside-ssm);
+	font-size: 3.5rem;
+	color: #fff;
+	text-align: center;
+	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.uxd-hero__link {
+	font-family: var(--ringside-ssm);
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: var(--uxd-red);
+	padding: 1.25rem 2rem;
+	border-radius: var(--uxd-border-radius);
+	box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.75);
+	margin: 1.5rem;
+	transition: background-color 0.25s;
+}
+
+.uxd-hero__link:hover {
+	cursor: pointer;
+	color: var(--uxd-red);
+	background-color: #fff;
+}
+
+.uxd-hero__social-links {
+	margin-top: 2.5rem;
+}
+
+.uxd-hero__social-link {
+	height: 2.25rem;
+	margin: 0 1.25rem;
+	cursor: pointer;
+}
+
+.uxd-main {
+	width: 100%;
+	max-width: calc(800px - 3rem);
+	padding: 2rem 0 3rem;
+	margin: 0 auto;
+	flex: 1;
+}
+
+.uxd-main h2 {
+	font-family: var(--ringside-ssm);
+	font-size: 1.75rem;
+	color: #2A2B2A;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 2rem 0 0;
+}
+
+.uxd-main h2 + hr {
+	width: 8rem;
+	border: none;
+	border-bottom: 1px solid var(--uxd-red);
+	margin-bottom: 2rem;
+}
+
+.uxd-main p {
+	font-family: var(--public-sans);
+	text-align: center;
+	line-height: 2;
+}
+
+.uxd-main a {
+	color: var(--uxd-red);
+	text-decoration: none;
+}
+
+.uxd-main a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.uxd-footer {
+	display: flex;
+	justify-content: center;
+	background-color: var(--uxd-red);
+	box-shadow: var(--red-shadow-inverted);
+}
+
+.uxd-footer__constraint {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.uxd-footer__logo {
+	width: 150px;
+}
+
+.uxd-footer__grid {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 2rem 0;
+}
+
+.uxd-footer__grid--borders {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.uxd-footer__grid-column {
+	display: grid;
+	grid-row-gap: 2rem;
+	justify-items: flex-start;
+	align-content: center;
+}
+
+.uxd-footer__text,
+.uxd-footer__link {
+	font-family: var(--ringside-ssm);
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+}
+
+.uxd-footer__link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.uxd-footer__social-link {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+.uxd-footer__social-link:hover {
+	cursor: pointer;
+}
