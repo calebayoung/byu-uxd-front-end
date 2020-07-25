@@ -125,28 +125,6 @@
 	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
-.uxd-hero__link {
-	font-family: var(--ringside-ssm);
-	font-size: 1.25rem;
-	font-weight: 600;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-	background-color: var(--uxd-red);
-	padding: 1.25rem 2rem;
-	border-radius: var(--uxd-border-radius);
-	box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.75);
-	margin: 1.5rem;
-	transition: background-color 0.25s;
-}
-
-.uxd-hero__link:hover {
-	cursor: pointer;
-	color: var(--uxd-red);
-	background-color: #fff;
-}
-
 .uxd-hero__social-links {
 	width: 100%;
 	max-width: 230px;

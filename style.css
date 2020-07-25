@@ -34,6 +34,35 @@ body {
 	margin: 0;
 }
 
+.uxd-main .uxd-button-link,
+.uxd-button-link {
+	font-family: var(--ringside-ssm);
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: var(--uxd-red);
+	padding: 1.25rem 2rem;
+	border-radius: var(--uxd-border-radius);
+	box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.75);
+	margin: 1.5rem;
+	transition: background-color 0.25s;
+}
+
+.uxd-main .uxd-button-link {
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.uxd-main .uxd-button-link:hover,
+.uxd-button-link:hover {
+	cursor: pointer;
+	color: var(--uxd-red);
+	text-decoration: none;
+	background-color: #fff;
+}
+
 .uxd-header {
 	display: flex;
 	flex-direction: column;
@@ -153,6 +182,10 @@ body {
 	text-align: left;
 	padding-left: 0.5rem;
 	margin: 0 0 2rem;
+}
+
+.uxd-main li:last-of-type {
+	margin-bottom: 0;
 }
 
 .uxd-main a {
