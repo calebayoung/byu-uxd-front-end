@@ -35,6 +35,7 @@
 }
 
 .uxd-hero__event {
+	width: 100%;
 	max-width: 230px;
 	display: flex;
 	flex-direction: column;

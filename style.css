@@ -22,7 +22,7 @@
 }
 
 html {
-	height: 100%;
+	min-height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -85,6 +85,7 @@ body {
 }
 
 .uxd-header__logo {
+	height: 75px;
 	width: 150px;
 }
 
@@ -93,6 +94,7 @@ body {
 }
 
 .uxd-header__menu-icon {
+	height: 75px;
 	width: 28px;
 	margin-right: 1.5rem;
 }
