@@ -161,7 +161,7 @@ body {
 	max-width: 320px;
 	font-family: var(--ringside-ssm);
     font-size: 3.5rem;
-    color: var(--uxd-red-dark);
+    color: var(--uxd-red);
 	text-align: center;
 	margin-top: 7rem;
 	z-index: 1;
