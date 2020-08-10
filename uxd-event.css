@@ -2,6 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #fff;
+	z-index: 1;
 }
 
 .uxd-event {

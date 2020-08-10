@@ -17,8 +17,8 @@
 	--public-sans: "Public Sans", sans-serif;
 	--red-shadow: 0 3px 7px 0 rgba(60, 64, 67, 0.3), 0 3px 6px 2px rgba(60, 64, 67, 0.15);
 	--red-shadow-inverted: 0 -3px 7px 0 rgba(60, 64, 67, 0.3), 0 3px 6px 2px rgba(60, 64, 67, 0.15);
-	--white-shadow: 5px 5px 20px 0 rgba(60, 64, 67, 0.4);
-	--white-shadow-hover: 5px 5px 20px 0 rgba(60, 64, 67, 0.6);
+	--white-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
+	--white-shadow-hover: 3px 3px 8px 2px rgba(0, 0, 0, 0.3);
 	--uxd-border-radius: 10px;
 }
 
@@ -35,35 +35,33 @@ body {
 	margin: 0;
 }
 
-.uxd-main .uxd-button-link,
-.uxd-button-link {
+.uxd-button-link,
+.uxd-main .uxd-button-link {
 	align-self: center;
 	font-family: var(--ringside-ssm);
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 400;
 	color: #fff;
-	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1.5px;
-	background-color: var(--uxd-red);
-	padding: 1rem 2rem;
-	border: none;
-	border-radius: var(--uxd-border-radius);
-	box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.75);
-	margin: 1.5rem;
-	transition: background-color 0.25s;
-}
-
-.uxd-main .uxd-button-link {
-	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.uxd-main .uxd-button-link:hover,
-.uxd-button-link:hover {
-	cursor: pointer;
-	color: var(--uxd-red);
+	line-height: 1.5;
 	text-decoration: none;
-	background-color: #fff;
+	background: linear-gradient(to bottom, #fb3123 0%, #fb3123 100%);
+	padding: 0.75rem 2rem;
+	border: none;
+	border-bottom: 4px solid var(--uxd-red-dark);
+	border-radius: var(--uxd-border-radius);
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+	margin: 1.5rem;
+	z-index: 1;
+}
+
+.uxd-button-link:hover,
+.uxd-main .uxd-button-link:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: linear-gradient(to bottom, var(--uxd-red-light) 0%, #fb3123 100%);
+	border-color: var(--uxd-red);
 }
 
 .uxd-header {
@@ -72,6 +70,7 @@ body {
 	align-items: center;
 	background-color: var(--uxd-red);
 	box-shadow: var(--red-shadow);
+	z-index: 2;
 }
 
 .uxd-header__constraint {
@@ -128,6 +127,7 @@ body {
 		color: #fff;
 		text-decoration: none;
 		padding: 0 1rem;
+		transition: background-color 0.25s;
 	}
 
 	.uxd-header__desktop-link:hover {
@@ -144,6 +144,128 @@ body {
 	}
 }
 
+.uxd-hero {
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.uxd-hero__header {
+	max-width: 640px;
+	font-family: var(--ringside-ssm);
+    font-size: 3.5rem;
+    color: var(--uxd-red-dark);
+	text-align: center;
+	margin-top: 7rem;
+	z-index: 1;
+}
+
+.uxd-hero__social-icons {
+	max-width: 230px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	z-index: 1;
+}
+
+.uxd-hero__social-icon {
+	height: 2.25rem;
+	margin: 1.25rem;
+	cursor: pointer;
+}
+
+.uxd-hero__background-icon {
+	height: 10rem;
+	position: absolute;
+	z-index: 0;
+}
+
+.uxd-hero__background-icon--mobile {
+	top: -4rem;
+	left: 35%;
+}
+
+.uxd-hero__background-icon--laptop {
+	bottom: 17.5rem;
+	left: -7rem;
+}
+
+.uxd-hero__background-icon--desktop {
+	bottom: 17.5rem;
+	right: -7rem;
+}
+
+@media (min-width: 400px) {
+
+	.uxd-hero__header {
+		width: calc(100% - 2rem);
+		padding: 0 1rem;
+	}
+
+	.uxd-hero__background-icon--mobile {
+		left: 40%;
+	}
+
+	.uxd-hero__background-icon--laptop {
+		left: -5rem;
+	}
+	
+	.uxd-hero__background-icon--desktop {
+		right: -5rem;
+	}
+	
+}
+
+@media (min-width: 640px) {
+
+	.uxd-hero__background-icon--mobile {
+		left: 42%;
+	}
+
+	.uxd-hero__background-icon--laptop {
+		bottom: 10rem;
+	}
+	
+	.uxd-hero__background-icon--desktop {
+		bottom: 10rem;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.uxd-hero__background-icon {
+		height: 15rem;
+	}
+
+	.uxd-hero__background-icon--mobile {
+		left: 4rem;
+	}
+	
+	.uxd-hero__background-icon--laptop {
+		bottom: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.uxd-hero__background-icon--laptop {
+		left: 0;
+	}
+	
+	.uxd-hero__background-icon--desktop {
+		right: 0;
+		bottom: 12rem;
+	}
+}
+
 .uxd-main {
 	width: calc(100% - 3rem);
 	max-width: calc(800px - 3rem);
@@ -153,6 +275,7 @@ body {
 	padding: 0 1.5rem 3rem;
 	margin: 0 auto;
 	flex: 1;
+	z-index: 1;
 }
 
 .uxd-title {
