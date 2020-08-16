@@ -6,9 +6,13 @@
 	z-index: 1;
 }
 
+.uxd-upcoming-events .uxd-button-link {
+	margin-top: 3rem;
+}
+
 .uxd-event {
 	width: 100%;
-	max-width: 230px;
+	max-width: 200px;
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
@@ -86,7 +90,17 @@
 	}
 
 	.uxd-event__date {
+		min-width: 125px;
 		border-top-right-radius: unset;
 		border-bottom-left-radius: var(--uxd-border-radius);
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.uxd-upcoming-events__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 4rem;
 	}
 }

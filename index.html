@@ -34,11 +34,11 @@
 			<a class="uxd-button-link" href="#">Join Club</a>
 			<a class="uxd-button-link" href="#">Subscribe to Newsletter</a>
 			<div class="uxd-hero__social-icons">
-				<img class="uxd-hero__social-icon" src="icons/facebook-brands.svg">
-				<img class="uxd-hero__social-icon" src="icons/slack-brands.svg">
-				<img class="uxd-hero__social-icon" src="icons/twitter-brands.svg">
-				<img class="uxd-hero__social-icon" src="icons/instagram-brands.svg">
-				<img class="uxd-hero__social-icon" src="icons/envelope-solid.svg">
+				<img class="uxd-hero__social-icon" src="icons/social-media/facebook-brands-red.svg">
+				<img class="uxd-hero__social-icon" src="icons/social-media/slack-brands-red.svg">
+				<img class="uxd-hero__social-icon" src="icons/social-media/twitter-brands-red.svg">
+				<img class="uxd-hero__social-icon" src="icons/social-media/instagram-brands-red.svg">
+				<img class="uxd-hero__social-icon" src="icons/social-media/envelope-solid-red.svg">
 			</div>
 			<img class="uxd-hero__background-icon uxd-hero__background-icon--mobile" src="icons/mobile-alt-solid.svg">
 			<img class="uxd-hero__background-icon uxd-hero__background-icon--laptop" src="icons/laptop-solid.svg">
@@ -47,42 +47,57 @@
 		<div class="uxd-upcoming-events">
 			<h2 class="uxd-title">Upcoming Club Events</h2>
 			<hr class="uxd-title-border">
-			<div class="uxd-event">
-				<div class="uxd-event__date">
-					<p class="uxd-event__month">September</p>
-					<p class="uxd-event__day-number">10</p>
-					<p class="uxd-event__day">Thursday</p>
+			<div class="uxd-upcoming-events__wrapper">
+				<div class="uxd-event">
+					<div class="uxd-event__date">
+						<p class="uxd-event__month">September</p>
+						<p class="uxd-event__day-number">10</p>
+						<p class="uxd-event__day">Thursday</p>
+					</div>
+					<div class="uxd-event__info">
+						<h2 class="uxd-event__title">Exploring UX Design</h2>
+						<p class="uxd-event__text">David Knell</p>
+						<p class="uxd-event__time">6:00pm - WSC 3250</p>
+					</div>
 				</div>
-				<div class="uxd-event__info">
-					<h2 class="uxd-event__title">Exploring UX Design</h2>
-					<p class="uxd-event__text">David Knell</p>
-					<p class="uxd-event__time">6:00pm - WSC 3250</p>
+				<div class="uxd-event">
+					<div class="uxd-event__date">
+						<p class="uxd-event__month">September</p>
+						<p class="uxd-event__day-number">16</p>
+						<p class="uxd-event__day">Wednesday</p>
+					</div>
+					<div class="uxd-event__info">
+						<h2 class="uxd-event__title">Escaping Flatland</h2>
+						<p class="uxd-event__text">John Dilworth</p>
+						<p class="uxd-event__time">7:00pm - WSC 3250</p>
+					</div>
+				</div>
+				<div class="uxd-event">
+					<div class="uxd-event__date">
+						<p class="uxd-event__month">September</p>
+						<p class="uxd-event__day-number">24</p>
+						<p class="uxd-event__day">Thursday</p>
+					</div>
+					<div class="uxd-event__info">
+						<h2 class="uxd-event__title">UX Case Competition</h2>
+						<p class="uxd-event__text">Logan Petit</p>
+						<p class="uxd-event__time">6:30pm - WSC 3250</p>
+					</div>
+				</div>
+				<div class="uxd-event">
+					<div class="uxd-event__date">
+						<p class="uxd-event__month">October</p>
+						<p class="uxd-event__day-number">1</p>
+						<p class="uxd-event__day">Thursday</p>
+					</div>
+					<div class="uxd-event__info">
+						<h2 class="uxd-event__title">Fast User Feedback</h2>
+						<p class="uxd-event__text">Derek Boman</p>
+						<p class="uxd-event__time">6:45pm - WSC 3250</p>
+					</div>
 				</div>
 			</div>
-			<div class="uxd-event">
-				<div class="uxd-event__date">
-					<p class="uxd-event__month">September</p>
-					<p class="uxd-event__day-number">16</p>
-					<p class="uxd-event__day">Wednesday</p>
-				</div>
-				<div class="uxd-event__info">
-					<h2 class="uxd-event__title">Escaping Flatland</h2>
-					<p class="uxd-event__text">John Dilworth</p>
-					<p class="uxd-event__time">7:00pm - WSC 3250</p>
-				</div>
-			</div>
-			<div class="uxd-event">
-				<div class="uxd-event__date">
-					<p class="uxd-event__month">September</p>
-					<p class="uxd-event__day-number">21</p>
-					<p class="uxd-event__day">Thursday</p>
-				</div>
-				<div class="uxd-event__info">
-					<h2 class="uxd-event__title">UX Case Competition</h2>
-					<p class="uxd-event__text">Logan Petit</p>
-					<p class="uxd-event__time">6:30pm - WSC 3250</p>
-				</div>
-			</div>
+			<a class="uxd-button-link" href="#">View All Events</a>
 		</div>
 		<main class="uxd-main">
 			<h2 class="uxd-title">What is UXD?</h2>
@@ -106,28 +121,17 @@
 					<strong>Networking</strong> to start bridging the gap between students and employers
 				</p>
 			</div>
-			<h2 class="uxd-title">How to Get Started</h2>
+			<a class="uxd-button-link" href="#">Learn More</a>
+			<!-- <h2 class="uxd-title">How to Get Started</h2>
 			<hr class="uxd-title-border">
 			<ol>
 				<li>If you are new to the club and haven't officially signed up through <a href="#">BYU Clubs,</a> be sure to do that! It's quick, easy, and FREE.</li>
 				<li>Sign up for our for <a href=#">weekly newsletter</a> for info about club events, job and internship opportunities, and links to tutorials and other learning content!</li>
-				<li>Connect with us on these <a href="#">social media platforms.</a> to receive by-the-minute updates about events and resources.</li>
+				<li>Connect with us on these <a href="#">social media platforms</a> to receive by-the-minute updates about events and resources.</li>
 				<li>Come to our club meetings every Thursday at 6 PM (check the <a href="#">event schedule</a> for room locations).</li>
 				<li>Get your club t-shirt for only $10 by filling out <a href="#">this form.</a></li>
 			</ol>
-			<img style="margin-top: 2rem;" src="images/big_logo_tshirt-225x300.jpg">
-			<h2 class="uxd-title">BYU's Design Thinking Minor</h2>
-			<hr class="uxd-title-border">
-			<p>While there is no UXD major, BYU does offer a minor called "Design Thinking". It's a combination of design-related classes from several different programs, including:</p>
-			<ul>
-				<li>the Design Program from the College of Fine Arts and Communications</li>
-				<li>the Experience Design and Management Program</li>
-				<li>the Technology & Engineering Studies Program from the College of Engineering</li>
-				<li>the Instructional Psychology and Technology Program</li>
-				<li>the Computer Science Department</li>
-			</ul>
-			<p>The requirements can be met by completing between 12.5 and 16.5 credits.</p>
-			<a class="uxd-button-link" href="#">View the Design Thinking Minor</a>
+			<img style="margin-top: 2rem;" src="images/big_logo_tshirt-225x300.jpg"> -->
 			<h2 class="uxd-title">Club Leadership</h2>
 			<hr class="uxd-title-border">
 			<div class="uxd-leadership">
@@ -221,11 +225,11 @@
 					</div>
 					<div class="uxd-footer__grid-column">
 						<div class="uxd-footer__social-icons">
-							<img class="uxd-footer__social-link" src="icons/facebook-brands.svg">
-							<img class="uxd-footer__social-link" src="icons/slack-brands.svg">
-							<img class="uxd-footer__social-link" src="icons/twitter-brands.svg">
-							<img class="uxd-footer__social-link" src="icons/instagram-brands.svg">
-							<img class="uxd-footer__social-link" src="icons/envelope-solid.svg">
+							<img class="uxd-footer__social-link" src="icons/social-media/facebook-brands-white.svg">
+							<img class="uxd-footer__social-link" src="icons/social-media/slack-brands-white.svg">
+							<img class="uxd-footer__social-link" src="icons/social-media/twitter-brands-white.svg">
+							<img class="uxd-footer__social-link" src="icons/social-media/instagram-brands-white.svg">
+							<img class="uxd-footer__social-link" src="icons/social-media/envelope-solid-white.svg">
 						</div>
 						<a class="uxd-footer__link" href="#">Subscribe to Newsletter</a>
 					</div>
@@ -233,9 +237,6 @@
 				<div class="uxd-footer__grid">
 					<div class="uxd-footer__grid-column">
 						<p class="uxd-footer__text">Icons provided by FontAwesome</p>
-					</div>
-					<div class="uxd-footer__grid-column">
-						<p class="uxd-footer__text">Photos provided by Unsplash</p>
 					</div>
 					<div class="uxd-footer__grid-column">
 						<p class="uxd-footer__text">This site is proudly powered by WordPress</p>
